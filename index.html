@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Mono:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="card">
+            <img src="/interactive-card/images/bg-card-front.png" alt="">
+            <div class="logo">
+                <img src="/interactive-card/images/card-logo.svg" alt="">
+            </div>
+            <div class="number">
+                <h2 id="card-number">xxxxxxxxxxxx</h2>
+            </div>
+            <div class="detal">
+                <h3 id="card-name">mohammed</h3>
+                <div class="date">
+                    <h3 id="month">09 </h3>
+                    <span class="backSlash">/</span>
+                    <h3 id="year">23</h3>
+                </div>
+            </div>
+        </div>
+        <div class="rearCard">
+            <img src="/interactive-card/images/bg-card-back.png" alt="">
+
+            <h3 id="cvc">000</h3>
+
+        </div>
+
+        <section class="creditDetails-position">
+            <form action="#">
+                <div class="creditDetails">
+                    <label for="">CardHolder name</label>
+                    <input type="text" id="card-name-input" placeholder="e.g mohammed" required>
+                    <label for="">Card number</label>
+                    <input type="text" id="card-number-input" placeholder="e.g 1234 5678 9123 0000" required
+                        maxlength="10">
+                    <span class="error" id="error_card">Wrong format, number only</span>
+                    <div class="special">
+                        <label for="">Exp.date(mm//yy) <span class="cvc">CVC</span></label>
+                        <input type="text" id="smallInp month" placeholder="MM" maxlength="2">
+                        <input type="text" id="smallInp year" placeholder="YY" maxlength="2">
+                        <input type="text" id="largInp" placeholder="e.g 123" maxlength="3">
+                        <div class="error">
+                            <div class="leftOne">
+                                <p id="error_date">Can't be blank</p>
+                            </div>
+                            <div class="rightOne">
+                                <p id="error_cvc">Can't be blank</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button>Conform</button>
+            </form>
+            </div>
+        </section>
+        <div class="thank">
+            <img src="/interactive-card/images/icon-complete.svg" alt="">
+            <h2>Thank you!</h2>
+            <p>We've added your card details.</p>
+            <button>Continue</button>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+
+</html>
